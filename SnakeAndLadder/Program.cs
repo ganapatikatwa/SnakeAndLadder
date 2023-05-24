@@ -6,7 +6,7 @@ namespace SnakeAndLadder
         public static void Main(string[] args)
         {
             InitialPosition initialPosition=new InitialPosition();
-            initialPosition.initialposition();
+            initialPosition.dierollposition();
         }
     }
 }
