@@ -16,11 +16,13 @@ namespace SnakeAndLadder
         {
             int position = 0;
             int dieroll = 0;
+            int diecount = 0;
             Console.WriteLine("Initial Position of Player1 is--"+position);
             while (position <winposition)
             {
                 Random random = new Random();
                 dieroll = random.Next(1, 7);
+                diecount++;
                 //Console.WriteLine("The Number Gets from Die Roll is --" + dieroll);
                 //position = dieroll;
                 //Console.WriteLine("The Position of Player After Die Roll is--" + position);
@@ -56,6 +58,7 @@ namespace SnakeAndLadder
                         break;
                 }
                 Console.WriteLine("Current position of the Palyer is--"+position);
+                Console.WriteLine("Number of Die Count--"+diecount);
                 if (position > 100)
                 {
                     position -= dieroll;
@@ -65,6 +68,7 @@ namespace SnakeAndLadder
             }
 
             Console.WriteLine("Player wins the gamr at 100 th position--" + position);
+            Console.WriteLine("Player Wins at Die Count--"+diecount);
 
         }
     }
