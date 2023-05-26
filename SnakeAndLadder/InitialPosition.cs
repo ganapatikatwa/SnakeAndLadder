@@ -56,6 +56,12 @@ namespace SnakeAndLadder
                         break;
                 }
                 Console.WriteLine("Current position of the Palyer is--"+position);
+                if (position > 100)
+                {
+                    position -= dieroll;
+                    Console.WriteLine("Previous Position:" + position);
+
+                }
             }
 
             Console.WriteLine("Player wins the gamr at 100 th position--" + position);
